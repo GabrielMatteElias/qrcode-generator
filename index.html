@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>QRCode Generator</title>
+</head>
+
+<body>
+    <main>
+        <div class="container">
+            <div class="header-form">
+                <div class="header">
+                    <h1>QR Code Generator</h1>
+                    <p>Paste the desired URL:</p>
+                </div>
+
+                <div class="form">
+                    <input type="text" placeholder="Insert the URL" id="input"/>
+                    <button onclick="generateQrcode()">Generate</button>
+                </div>
+
+
+            </div>
+
+            <div class="qrcode">
+                <img src="https://api.qrserver.com/v1/create-qr-code/?color=52734D&bgcolor=DDFFBC&size=500X500&data=https://github.com/GabrielMatteElias"
+                    alt="" id="img">
+
+
+            </div>
+
+
+        </div>
+
+    </main>
+
+    <script src="./script.js"></script>
+</body>
+
+</html>
